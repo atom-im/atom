@@ -1,1 +1,1 @@
-Hello, big big world!
+http://atom.im
