@@ -1,418 +1,544 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Call for Papers!</title>
-	<link href="images/favicon.ico" id="favicon" rel="shortcut icon" type="image/x-icon">
-	<link href="css/dblp-2015-02-06.css" rel="stylesheet" type="text/css">
-	<link href="css/bootstrap-table.css" rel="stylesheet" type="text/css">
-	<meta content="Call for papers" name="description">
-	<meta content="conference, computer science and technology, non-volatile memory(NVM), NVM, STT-RAM, file system, operating system" name="keywords">
-</head>
-<body class="no-js" style="overflow-y: scroll;">
-	<script type="application/javascript">
-	       var el = document.getElementsByTagName("body")[0];
-	       el.className = "js";
-	</script> 
-	<script src="js/jquery-1.11.0.min.js" type="application/javascript">
-	</script> 
-	<script src="js/jquery.dblp-2014-08-07.min.js" type="application/javascript">
-	</script> 
-	<script src="js/jquery.cookie-1.2.min.js" type="application/javascript">
-	</script> 
-	<script src="js/encoder-2012-09-23.min.js" type="application/javascript">
-	</script> 
-	<script src="js/buckets-1.0.min.js" type="application/javascript">
-	</script> <!-- banner -->
-	<div id="banner">
-		<!--[if lt IE 9]><div class="message fancy" data-version="2014-01-01">Sorry, but you need <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer 9 or newer</a> to view our pages without errors. Please upgrade your web browser.</div><![endif]-->
-	</div>
-	<div id="main">
-		<!-- logo -->
-		<div id="logo">
-			<a><img alt="call for papers" src="images/logo.png"></a>
-		</div><!-- head line -->
-		<header class="noline" id="headline">
-			<h1>Call for papers!</h1>
-		</header>
-		<div class="clear-both"></div>
-		<div class="hideable" id="highlight">
-			<header class="hide-head nowrap">
-				<h2>Highlight</h2>
-			</header>
-			<div class="hide-body">
-				<table class="table table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th>Name</th>
-							<th>Abstract Deadline</th>
-							<th>Submission Deadline</th>
-							<th>Notification Due</th>
-							<th>Countdown</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr style="background-color:YellowGreen">
-							<th scope="row">
-								<a href="http://www.iccd-conf.com/Home.html">ICCD'17</a>
-							</th>
-							<td>June 9, 2017</td>
-							<td>June 16, 2017</td>
-							<td>Sep 1, 2017</td>
-							<td>
-								<div id="countdown"></div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<div class="hideable" id="upcoming">
-			<header class="hide-head nowrap">
-				<h2>Upcoming</h2>
-			</header>
-			<div class="hide-body">
-				<table class="table table-bordered table-striped table-condensed">
-					<thead>
-						<tr>
-							<th>Name</th>
-							<th>Abstract Deadline</th>
-							<th>Submission Deadline</th>
-							<th>Notification Due</th>
-							<th>Countdown</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">
-								<a href="https://www.usenix.org/conference/fast18/call-for-papers">FAST'18</a>
-							</th>
-							<td>N/A</td>
-							<td>September 28, 2017</td>
-							<td>December 11, 2017</td>
-							<td>
-								<div data-countdown="2017/9/28"></div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<div class="hideable" id="past">
-			<header class="hide-head nowrap">
-				<h2>Past</h2>
-			</header>
-			<div class="hide-body hidden">
-				<table class="table table-bordered table-condensed">
-					<thead>
-						<tr>
-							<th>Name</th>
-							<th>Abstract Deadline</th>
-							<th>Submission Deadline</th>
-							<th>Notification Due</th>
-							<th>Countdown</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">
-								<a href="http://www.computingfrontiers.org/2016/">CF'16</a>
-							</th>
-							<td>N/A</td>
-							<td>January 29, 2016</td>
-							<td>March 11, 2016</td>
-							<td>
-								<div data-countdown="2016/01/29"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="https://www.usenix.org/conference/atc16/">ATC'16</a>
-							</th>
-							<td>N/A</td>
-							<td>February 1, 2016</td>
-							<td>April 15, 2016</td>
-							<td>
-								<div data-countdown="2016/02/01"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://storageconference.us/">MSST'16</a>
-							</th>
-							<td>February 5, 2016</td>
-							<td>February 12, 2016</td>
-							<td>March 25, 2016</td>
-							<td>
-								<div data-countdown="2016/02/12"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://icpp2016.cs.wcupa.edu/cfp.html">ICCP'16</a>
-							</th>
-							<td>March 11, 2016</td>
-							<td>March 11, 2016</td>
-							<td>May 6, 2016</td>
-							<td>
-								<div data-countdown="2016/03/11"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://www.microarch.org/micro49/">MICRO'16</a>
-							</th>
-							<td>April 3, 2016</td>
-							<td>April 10, 2016</td>
-							<td>June 25, 2016</td>
-							<td>
-								<div data-countdown="2016/04/03"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://aca2016.tcarch.org">ACA'16</a>
-							</th>
-							<td>April 20, 2016</td>
-							<td>April 20, 2016</td>
-							<td>May 30, 2016</td>
-							<td>
-								<div data-countdown="2016/04/20"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="https://sites.google.com/a/camelab.org/nvmsa-2016/">NVMSA'16</a>
-							</th>
-							<td>April 25, 2016</td>
-							<td>April 25, 2016</td>
-							<td>June 1, 2016</td>
-							<td>
-								<div data-countdown="2016/04/25"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="https://www.usenix.org/conference/osdi16">OSDI'16</a>
-							</th>
-							<td>May 3, 2016</td>
-							<td>May 10, 2016</td>
-							<td>July 30, 2016</td>
-							<td>
-								<div data-countdown="2016/05/03"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://www.iccd-conf.com/">ICCD'16</a>
-							</th>
-							<td>May 13, 2016</td>
-							<td>May 20, 2016</td>
-							<td>July 29, 2016</td>
-							<td>
-								<div data-countdown="2016/05/13"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://stlab.wnlo.hust.edu.cn/ncis2016/index.html">NCIS'16</a>
-							</th>
-							<td>June 10, 2016</td>
-							<td>June 10, 2016</td>
-							<td>July 10, 2016</td>
-							<td>
-								<div data-countdown="2016/06/10"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://novel.ict.ac.cn/ASPLOS2017/">ASPLOS'17</a>
-							</th>
-							<td>August 8, 2016</td>
-							<td>August 15, 2016</td>
-							<td>November 7, 2016</td>
-							<td>
-								<div data-countdown="2016/08/08"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://hpca2017.org/call-for-contributions/">HPCA'17</a>
-							</th>
-							<td>July 24, 2016</td>
-							<td>July 30, 2016</td>
-							<td>October 12, 2016</td>
-							<td>
-								<div data-countdown="2016/07/24"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="https://www.date-conference.com">DATE'17</a>
-							</th>
-							<td>September 11, 2016</td>
-							<td>September 18, 2016</td>
-							<td>November 11, 2016</td>
-							<td>
-								<div data-countdown="2016/09/18"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="https://www.usenix.org/conference/fast17/call-for-papers">FAST'17</a>
-							</th>
-							<td>N/A</td>
-							<td>September 27, 2016</td>
-							<td>December 12, 2016</td>
-							<td>
-								<div data-countdown="2016/9/27"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://www.sigmetrics.org/sigmetrics2017/">Sigmetrics'17 (1/2)</a>
-							</th>
-							<td>October 11, 2016</td>
-							<td>October 18, 2016</td>
-							<td>TBD</td>
-							<td>
-								<div data-countdown="2016/10/11"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://eurosys2017.org/">EuroSys'17</a>
-							</th>
-							<td>October 14, 2016</td>
-							<td>October 21, 2016</td>
-							<td>January 23, 2017</td>
-							<td>
-								<div data-countdown="2016/10/14"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://www.ipdps.org/">IPDPS'17</a>
-							</th>
-							<td>October 18, 2016</td>
-							<td>October 23, 2016</td>
-							<td>January 8, 2017</td>
-							<td>
-								<div data-countdown="2016/10/18"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="https://www.usenix.org/conferences/byname/155">HotOS'17</a>
-							</th>
-							<td>N/A</td>
-							<td>January 10, 2017 (≈2015)</td>
-							<td>TBD</td>
-							<td>
-								<div data-countdown="2017/01/10"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://www.sigmetrics.org/sigmetrics2017/">Sigmetrics'17 (2/2)</a>
-							</th>
-							<td>January 10, 2017</td>
-							<td>January 17, 2017</td>
-							<td>TBD</td>
-							<td>
-								<div data-countdown="2017/01/10"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://www.computingfrontiers.org/">CF'17</a>
-							</th>
-							<td>N/A</td>
-							<td>January 20, 2017</td>
-							<td>March 14, 2017</td>
-							<td>
-								<div data-countdown="2017/01/20"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://www.systor.org/2017/">SYSTOR'17</a>
-							</th>
-							<td>N/A</td>
-							<td>February 22, 2017</td>
-							<td>March 29, 2017</td>
-							<td>
-								<div data-countdown="2017/02/22"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="https://www.sigops.org/sosp/sosp17/index.html">SOSP'17</a>
-							</th>
-							<td>April 14, 2017</td>
-							<td>April 21, 2017</td>
-							<td>August 7, 2017</td>
-							<td>
-								<div data-countdown="2017/04/14"></div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row">
-								<a href="http://storageconference.us/">MSST'17</a>
-							</th>
-							<td>February 10, 2017</td>
-							<td>February 17, 2017</td>
-							<td>March 31, 2017</td>
-							<td>
-								<div data-countdown="2017/02/10"></div>
-							</td>
-						</tr>						
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<div class="info">
-			<p>Link: <a href="http://atom.im/ccf/">Chinese Computing Federation (CCF) Ranking List for Conferences</a></p>
-		</div><!-- footer -->
-		<div class="clear-both"></div>
-		<div id="footer">
-			<div class="info">
-				<p><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fatom.im"><img alt="w3c valid html" src="images/w3c-valid-html.80x15.gray.png"></a>&nbsp;Theme designed by <a href="http://dblp.uni-trier.de">dblp</a>, customiz’d by <a href="http://atom.im">atom.im</a>. Last updated on April 12, 2017.</p>
-			</div>
-		</div>
-	</div>
-	<script src="js/dblp-2015-02-11.min.js" type="application/javascript">
-	</script> 
-	<script src="js/dblp-ui-2014-06-16.min.js" type="application/javascript">
-	</script> 
-	<script src="js/jquery.countdown.min.js">
-	</script> 
-	<script src="js/moment.min.js">
-	</script> 
-	<script src="js/moment-timezone-with-data.min.js">
-	</script> 
-	<script type="text/javascript">
-	       var deadline = moment.tz("2017-06-09 23:59", "Asia/Shanghai");
-	       $('#countdown').countdown(deadline.toDate(), function(event) {
-	           $(this).html(event.strftime('%D days %H:%M:%S'));
-	       });
+    
 
-	       $('[data-countdown]').each(function() {
-	           var $this = $(this),
-	               finalDate = $(this).data('countdown');
-	           $this.countdown(finalDate, function(event) {
-	               $this.html(event.strftime('%D days'));
-	           });
-	       });
-	</script> 
-	<script>
-	       var _hmt = _hmt || [];
-	       (function() {
-	           var hm = document.createElement("script");
-	           hm.src = "//hm.baidu.com/hm.js?ab3933e123532439e4bf64a0fd6ac3cf";
-	           var s = document.getElementsByTagName("script")[0];
-	           s.parentNode.insertBefore(hm, s);
-	       })();
-	</script>
+ <html lang="en"> 
+
+<head>
+	<meta name="generator" content="Hugo 0.26" />
+        <title>Call for papers</title>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selected call for papers from top computer architecture &amp; system conferences.">
+    <meta name="author" content="Hu WAN">
+    <meta name="keywords" content="conference, computer science and technology, non-volatile memory, NVM, file system, operating system">
+    <link href="assets/images/favicon.ico" id="favicon" rel="shortcut icon" type="image/x-icon">
+    
+    <link href="assets/css/dblp-2015-02-06.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap-table.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="no-js" style="overflow-y: scroll;">
+        <script type="application/javascript">
+           var el = document.getElementsByTagName("body")[0];
+           el.className = "js";
+    </script>
+    <script src="assets/js/jquery-1.11.0.min.js" type="application/javascript">
+    </script>
+    <script src="assets/js/jquery.dblp-2014-08-07.min.js" type="application/javascript">
+    </script>
+    <script src="assets/js/jquery.cookie-1.2.min.js" type="application/javascript">
+    </script>
+    <script src="assets/js/encoder-2012-09-23.min.js" type="application/javascript">
+    </script>
+    <script src="assets/js/buckets-1.0.min.js" type="application/javascript">
+    </script>
+
+
+    <div id="main">
+    
+	        
+        <div id="logo">
+            <a><img alt="call for papers" src="assets/images/logo.png"></a>
+        </div>
+        
+        <header class="noline" id="headline">
+            <h1>Call for Papers!</h1>
+        </header>
+        <div class="warning">
+            <p>Important dates of selected Call for Papers in computer architecture &amp; system fields.</p>
+        </div>
+        <div class="clear-both"></div>
+
+    
+
+    
+	        <div class="hideable" id="highlight">
+            <header class="hide-head nowrap">
+                <h2>Highlight</h2>
+            </header>
+            <div class="hide-body">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>When</th>
+                            <th>Abstract</th>
+                            <th>Submission</th>
+                            <th>Notification</th>
+                            <th>Final Version</th>
+                            <th>Countdown</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                      
+                      <tr style="background-color:YellowGreen">
+                          <th scope="row"> 
+                              <a href="https://www.usenix.org/conference/atc18/call-for-papers">ATC 2018</a>
+                          </th>
+                          <td>Jul 11-13, 2018</td> 
+                          <td>N/A</td> 
+                          <td>Feb 6, 2018</td> 
+                          <td>Apr 18, 2018</td>
+                          <td>May 31, 2018</td>
+                          <td>
+                              <div id="countdown"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    
+
+    
+	        <div class="hideable" id="upcoming">
+            <header class="hide-head nowrap">
+                <h2>Upcoming</h2>
+            </header>
+            <div class="hide-body">
+                <table class="table table-bordered table-striped table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>When</th>
+                            <th>Abstract Deadline</th>
+                            <th>Submission Deadline</th>
+                            <th>Notification Due</th>
+                            <th>Countdown</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="https://www.usenix.org/conference/fast18/call-for-papers" target="_blank">FAST 2018</a>
+                          </th>
+                          <td>Feb 12-15, 2018</td> 
+                          <td>N/A</td> 
+                          <td>Sep 28, 2017</td> 
+                          <td>Dec 11, 2017</td>
+                          <td>
+                              <div data-countdown="2017/9/28"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://dblp.uni-trier.de/db/conf/nvmsa/" target="_blank">NVMSA 2018</a>
+                          </th>
+                          <td>mid Aug, 2018</td> 
+                          <td>Mar 10</td> 
+                          <td>TBA</td> 
+                          <td>TBA</td>
+                          <td>
+                              <div data-countdown="2018/3/10"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="https://www.usenix.org/conference/osdi18/" target="_blank">OSDI 2018</a>
+                          </th>
+                          <td>Oct 8-10, 2018</td> 
+                          <td>early May, 2018</td> 
+                          <td>TBA</td> 
+                          <td>TBA</td>
+                          <td>
+                              <div data-countdown="2018/5/1"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="https://www.date-conference.com/" target="_blank">DATE 2018</a>
+                          </th>
+                          <td>Mar 19-23, 2018</td> 
+                          <td>N/A</td> 
+                          <td>Sep 10, 2017</td> 
+                          <td>Nov 10, 2017</td>
+                          <td>
+                              <div data-countdown="2017/9/10"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://eurosys2018.org/call-for-papers/" target="_blank">EuroSys 2018</a>
+                          </th>
+                          <td>Apr 23-26, 2018</td> 
+                          <td>Oct 20, 2017</td> 
+                          <td>Oct 27, 2017</td> 
+                          <td>Jan 22, 2018</td>
+                          <td>
+                              <div data-countdown="2017/10/20"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://isca2018.ece.ucr.edu/" target="_blank">ISCA 2018</a>
+                          </th>
+                          <td>Jun 2-6, 2018</td> 
+                          <td>Nov 14, 2017</td> 
+                          <td>Nov 21, 2017</td> 
+                          <td>Mar 13, 2018</td>
+                          <td>
+                              <div data-countdown="2017/11/14"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://www.ipdps.org/" target="_blank">IPDPS</a>
+                          </th>
+                          <td>May 21-15, 2018</td> 
+                          <td>Oct 17, 2017</td> 
+                          <td>Oct 22, 2017</td> 
+                          <td>Dec 8, 2017</td>
+                          <td>
+                              <div data-countdown="2017/10/17"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://ics2018.ict.ac.cn" target="_blank">ICS 2018</a>
+                          </th>
+                          <td>Jun 13-15, 2018</td> 
+                          <td>N/A</td> 
+                          <td>Jan 18, 2018</td> 
+                          <td>Apr 1, 2018</td>
+                          <td>
+                              <div data-countdown="2018/1/18"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://www.hpdc.org/2018/" target="_blank">HPDC 2018</a>
+                          </th>
+                          <td>Jun 11-15, 2018</td> 
+                          <td>mid Jan, 2018</td> 
+                          <td>TBA</td> 
+                          <td>TBA</td>
+                          <td>
+                              <div data-countdown="2018/1/10"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    
+
+    
+	        <div class="hideable" id="past">
+            <header class="hide-head nowrap">
+                <h2>Past</h2>
+            </header>
+            <div class="hide-body hidden">
+            
+                <table class="table table-bordered table-striped table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>When</th>
+                            <th>Abstract Deadline</th>
+                            <th>Submission Deadline</th>
+                            <th>Notification Due</th>
+                            <th>Countdown</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://www.asplos2018.org" target="_blank">ASPLOS 2018</a>
+                          </th>
+                          <td><strong>Mar 24-28, 2018</strong></td> 
+                          <td>Aug 8, 2017</td> 
+                          <td>Aug 11, 2017</td> 
+                          <td>Nov 13, 2017</td>
+                          <td>
+                              <div data-countdown="2018/3/24"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://hpca2018.ece.ucsb.edu" target="_blank">HPCA 2018</a>
+                          </th>
+                          <td><strong>Feb 24-28, 2018</strong></td> 
+                          <td>Jul 25, 2017</td> 
+                          <td>Aug 1, 2017</td> 
+                          <td>Oct 27, 2017</td>
+                          <td>
+                              <div data-countdown="2018/2/24"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="https://www.microarch.org/micro50/" target="_blank">MICRO 2017</a>
+                          </th>
+                          <td><strong>Oct 14-18, 2017</strong></td> 
+                          <td>Mar 28, 2017</td> 
+                          <td>Apr 4, 2017</td> 
+                          <td>Jul 5, 2017</td>
+                          <td>
+                              <div data-countdown="2017/10/14"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://www.iccd-conf.com/Home.html" target="_blank">ICCD 2017</a>
+                          </th>
+                          <td><strong>Nov 5-7, 2017</strong></td> 
+                          <td>Jun 19, 2017</td> 
+                          <td>Jun 28, 2017</td> 
+                          <td>Sep 1, 2017</td>
+                          <td>
+                              <div data-countdown="2017/11/5"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="https://www.hipeac.net/2017/stockholm/" target="_blank">HiPEAC 2017</a>
+                          </th>
+                          <td>Jan 23-25, 2017</td> 
+                          <td>N/A</td> 
+                          <td>Jun 1, 2017</td> 
+                          <td>-</td>
+                          <td>
+                              <div data-countdown="2017/1/23"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://www.icpp-conf.org/2017/index.php" target="_blank">ICPP 2017</a>
+                          </th>
+                          <td>Aug 14-17, 2017</td> 
+                          <td>N/A</td> 
+                          <td>Feb 27, 2017</td> 
+                          <td>May 8, 2017</td>
+                          <td>
+                              <div data-countdown=""></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://storageconference.us/2017" target="_blank">MSST 2017</a>
+                          </th>
+                          <td>May 15-19, 2017</td> 
+                          <td>Feb 10, 2017</td> 
+                          <td>Feb 17, 2017</td> 
+                          <td>Mar 31, 2017</td>
+                          <td>
+                              <div data-countdown=""></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://www.computingfrontiers.org/2017/index.html" target="_blank">CF 2017</a>
+                          </th>
+                          <td>May 15-17, 2017</td> 
+                          <td>N/A</td> 
+                          <td>Feb 5, 2017</td> 
+                          <td>Mar 14, 2017</td>
+                          <td>
+                              <div data-countdown=""></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://hpcl.seas.gwu.edu/hpcc2017/" target="_blank">HPCC</a>
+                          </th>
+                          <td>Dec 18-20, 2017</td> 
+                          <td>N/A</td> 
+                          <td>Jun 15, 2017</td> 
+                          <td>Aug 15, 2017</td>
+                          <td>
+                              <div data-countdown=""></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://www.sigops.org/hotos/hotos17/cfp.html" target="_blank">HotOS 2017</a>
+                          </th>
+                          <td>May 7-10, 2017</td> 
+                          <td>N/A</td> 
+                          <td>Jan 25, 2017</td> 
+                          <td>Apr 7, 2017</td>
+                          <td>
+                              <div data-countdown=""></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://nvmsa2017.iis.sinica.edu.tw/index.html" target="_blank">NVMSA 2017</a>
+                          </th>
+                          <td>Aug 16-18, 2017</td> 
+                          <td>Apr 14</td> 
+                          <td>Apr 23</td> 
+                          <td>Jun 2</td>
+                          <td>
+                              <div data-countdown="2017/4/14"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://www.systor.org/2017" target="_blank">SYSTOR 2017</a>
+                          </th>
+                          <td>May 22-24, 2017</td> 
+                          <td>N/A</td> 
+                          <td>Feb 28, 2017</td> 
+                          <td>Mar 29, 2017</td>
+                          <td>
+                              <div data-countdown=""></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="https://www.sigops.org/sosp/sosp17/call-for-contributions.html" target="_blank">SOSP 2017</a>
+                          </th>
+                          <td><strong>Oct 29-31, 2017</strong></td> 
+                          <td>Apr 14, 2017</td> 
+                          <td>Apr 21, 2017</td> 
+                          <td>Aug 7, 2017</td>
+                          <td>
+                              <div data-countdown="2017/10/29"></div>
+                          </td>
+                      </tr>
+                      
+                      
+                      
+                      <tr>
+                          <th scope="row"> 
+                              <a href="http://conf.researchr.org/home/ppopp-2017" target="_blank">PPoPP</a>
+                          </th>
+                          <td>Feb 4-8, 2017</td> 
+                          <td>N/A</td> 
+                          <td>Aug 1, 2016</td> 
+                          <td>Nov 12, 2016</td>
+                          <td>
+                              <div data-countdown=""></div>
+                          </td>
+                      </tr>
+                      
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    
+
+    
+	        <div class="info">
+            <p><strong>Link</strong>: <a href="http://atom.im/ccf/ccf-ranking" target="_blank">Chinese Computing Federation (CCF) Ranking List for Conferences</a></p>
+        </div>
+
+    
+
+            <div class="clear-both"></div>
+        <div id="footer">
+            <div class="info">
+                <p><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fatom.im"><img alt="w3c valid html" src="assets/images/w3c-valid-html.80x15.gray.png"></a> Theme designed by <a href="http://dblp.uni-trier.de/" target="_blank">dblp</a>, customized by <a href="http://atom.im/" target="_blank">atom.im</a>. Last updated on Sep 2, 2017.</p>
+            </div>
+        </div>
+
+    </div>
+
+        <script src="assets/js/dblp-2015-02-11.min.js" type="application/javascript">
+    </script> 
+    <script src="assets/js/dblp-ui-2014-06-16.min.js" type="application/javascript">
+    </script> 
+    <script src="assets/js/jquery.countdown.min.js">
+    </script> 
+    <script src="assets/js/moment.min.js">
+    </script> 
+    <script src="assets/js/moment-timezone-with-data.min.js">
+    </script> 
+    <script type="text/javascript">
+var deadline = moment.tz("2018-02-06 23:59", "Asia/Shanghai");
+           $('#countdown').countdown(deadline.toDate(), function(event) {
+               $(this).html(event.strftime('%D days %H:%M:%S'));
+           });
+
+           $('[data-countdown]').each(function() {
+               var $this = $(this),
+                   finalDate = $(this).data('countdown');
+               $this.countdown(finalDate, function(event) {
+                   $this.html(event.strftime('%D days'));
+               });
+           });
+    </script> 
+
 </body>
 </html>
