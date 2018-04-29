@@ -56,10 +56,9 @@
 					<tr>
 						<th>Name</th>
 						<th>When</th>
-						<th>Abstract</th>
-						<th>Submission</th>
-						<th>Notification</th>
-						<th>Final Version</th>
+						<th>Abstract Deadline</th>
+						<th>Submission Deadline</th>
+						<th>Notification Due</th>
 						<th>Countdown</th>
 					</tr>
 				</thead>
@@ -69,10 +68,9 @@
 							<a href="https://nvmsa18.github.io" target="_blank">NVMSA 2018</a>
 						</th>
 						<td>Aug 28-31, 2018</td>
-						<td><strong>Apr 20, 2018</strong></td>
+						<td>Apr 20, 2018</td>
 						<td>Apr 27, 2018</td>
-						<td>Jun 1, 2018</td>
-						<td>Jun 15, 2018</td>
+						<td><strong>Jun 1, 2018</strong></td>
 						<td>
 							<div id="countdown"></div>
 						</td>
@@ -101,14 +99,14 @@
 				<tbody>
 					<tr>
 						<th scope="row">
-							<a href="https://www.usenix.org/conference/osdi18/" target="_blank">OSDI 2018</a>
+							<a href="https://www.eurosys2019.org" target="_blank">EuroSys 2019</a>
 						</th>
-						<td>Oct 8-10, 2018</td>
-						<td>Apr 26, 2018</td>
-						<td>May 3, 2018</td>
-						<td>Jul 24, 2018</td>
+						<td>Mar 25-28, 2018</td>
+						<td>Sep 24, 2019</td>
+						<td>Oct 1, 2018</td>
+						<td>21 Dec, 2018</td>
 						<td>
-							<div data-countdown="2018/4/26"></div>
+							<div data-countdown="2018/9/24"></div>
 						</td>
 					</tr>
 					<tr>
@@ -167,6 +165,18 @@
 						<td>TBA</td>
 						<td>
 							<div data-countdown="2018/3/15"></div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<a href="https://www.usenix.org/conference/osdi18/" target="_blank">OSDI 2018</a>
+						</th>
+						<td>Oct 8-10, 2018</td>
+						<td>Apr 26, 2018</td>
+						<td>May 3, 2018</td>
+						<td>Jul 24, 2018</td>
+						<td>
+							<div data-countdown="2018/4/26"></div>
 						</td>
 					</tr>
 					<tr>
@@ -457,7 +467,7 @@
 	<div class="clear-both"></div>
 	<div id="footer">
 		<div class="info">
-			<p><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fatom.im"><img alt="w3c valid html" src="assets/images/w3c-valid-html.80x15.gray.png"></a> Theme designed by <a href="http://dblp.uni-trier.de/" target="_blank">dblp</a>, customized by <a href="http://atom.im/" target="_blank">atom.im</a>. Last updated on Apr 21, 2018.</p>
+			<p><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fatom.im"><img alt="w3c valid html" src="assets/images/w3c-valid-html.80x15.gray.png"></a> Theme designed by <a href="http://dblp.uni-trier.de/" target="_blank">dblp</a>, customized by <a href="http://atom.im/" target="_blank">atom.im</a>. Last updated on Apr 29, 2018.</p>
 		</div>
 	</div>
 
@@ -473,7 +483,7 @@
 	<script src="assets/js/moment-timezone-with-data.min.js">
 	</script>
 	<script type="text/javascript">
-	var deadline = moment.tz("2018\/4\/21 19:59", "Asia/Shanghai");
+	var deadline = moment.tz("2018\/6\/1 12:00", "Asia/Shanghai");
 	$('#countdown').countdown(deadline.toDate(), function(event) {
 			$(this).html(event.strftime('%D days %H:%M:%S'));
 			});
