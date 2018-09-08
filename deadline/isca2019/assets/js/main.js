@@ -30,31 +30,6 @@
 	window.windowHeight = window.innerHeight;
 	window.windowWidth = window.innerWidth;
 
-	if ($('.quietflow').length) {
-		var optData = eval('(' + $('.quietflow').attr('data-options') + ')'),
-			    optDefault = {
-			theme: "bouncingBalls",
-			specificColors: ["rgba(255, 214, 108, .5)", "rgba(192, 55, 23, .5)", "rgba(255, 153, 53, .5)", "rgba(141, 16, 12, .5)", "rgba(53, 71, 45, .5)"],
-			backgroundCol: "#333"
-		},
-			    options = $.extend(optDefault, optData);
-		$("body").quietflow(options);
-	}
-	if ($('.ribbons-bg').length) {
-		new Ribbons({
-			colorSaturation: "60%",
-			colorBrightness: "50%",
-			colorAlpha: 0.5,
-			colorCycleSpeed: 5,
-			verticalPosition: "random",
-			horizontalSpeed: 200,
-			ribbonCount: 3,
-			strokeSize: 0,
-			parallaxAmount: -0.2,
-			animateSections: true
-		});
-	}
-
 	/**
    * Countdown
    */
@@ -66,5 +41,5 @@
 			self.html(event.strftime(_strf));
 		}).removeClass("hide");
 	});
-	
+
 })(jQuery);
