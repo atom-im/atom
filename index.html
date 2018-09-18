@@ -21,7 +21,7 @@
 		var el = document.getElementsByTagName("body")[0];
 		el.className = "js";
 	</script>
-	<script src="assets/js/jquery-1.11.0.min.js">
+	<script src="assets/js/jquery-3.3.1.min.js">
 	</script>
 	<script src="assets/js/jquery.dblp-2014-08-07.min.js">
 	</script>
@@ -668,10 +668,10 @@
 	</script>
 	<script src="assets/js/moment.min.js">
 	</script>
-	<script src="assets/js/moment-timezone-with-data.min.js">
+	<script src="assets/js/moment-timezone-with-data-2012-2022.min.js">
 	</script>
 	<script>
-	var deadline = moment.tz("2018\/12\/4 15:59", "Asia/Shanghai");
+	var deadline = moment.tz("2018-12-03 23:59:59", "Asia/Hong_Kong");
 	$('#countdown').countdown(deadline.toDate(), function(event) {
 			$(this).html(event.strftime('%D days %H:%M:%S'));
 			});
