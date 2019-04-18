@@ -1,1 +1,1 @@
-http://atom.im
+https://atom.im
