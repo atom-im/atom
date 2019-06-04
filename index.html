@@ -217,6 +217,17 @@
 
       searchBox.keyup(displayMatches);
       /* Search implementation ends */
+
+      $(function () {
+        $("#logo").click(function () {
+          $(this).addClass('logo-spinner');
+          setTimeout(function (){
+            $("#logo").removeClass('logo-spinner');
+          }, 3000);
+
+        });
+      });
+
     })(jQuery);
     </script>
   </body>

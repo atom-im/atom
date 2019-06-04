@@ -208,6 +208,20 @@ li.repo h3 {
   border-right-color: #6aad2d;
 }
 
+.logo-spinner {
+  animation: spin-animation 2s 1;
+  display: inline-block;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
 @media screen and (max-width: 1000px) {
   body {
     min-width: inherit;
