@@ -22,12 +22,14 @@
     <div id="wrapper" class="grid clearfix">
       <div id="main" class="grid-1">
         <div id="logo"></div>
+        <div id="intro">
         <h1>ATOM.IM</h1>
         <h3>Useful Information for Researchers in Computer Science.</h3>
         <p>&nbsp;</p>
         <p>&copy; 2019 atom.im.</p>
-        <p>Design: <a href="https://github.com/twitter/twitter.github.io/tree/legacy_website" target="_blank">Twitter, Inc.</a> </p>
-        <p>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.09b50f44b084e6117a517b78d3626147.1559639908186.1559639908186.1559648320375.2&__hssc=57440181.3.1559648320375&__hsfp=2653751460" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.<p>
+        <p>Design: <a href="https://github.com/twitter/twitter.github.io/tree/legacy_website" target="_blank">Twitter, Inc.</a></p>
+        <p>Icons made by <a href="https://www.freepik.com/" title="Freepik" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>.</p>
+        </div>
       </div>
 
       <div class="grid grid-3">
@@ -217,6 +219,17 @@
 
       searchBox.keyup(displayMatches);
       /* Search implementation ends */
+
+      $(function () {
+        $("#logo").click(function () {
+          $(this).addClass('logo-spinner');
+          setTimeout(function (){
+            $("#logo").removeClass('logo-spinner');
+          }, 5000);
+
+        });
+      });
+
     })(jQuery);
     </script>
   </body>

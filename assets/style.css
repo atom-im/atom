@@ -66,18 +66,18 @@ a:hover {
 }
 
 #logo {
+  position: absolute;
   width: 128px;
   height: 128px;
   background: url("logo.svg");
   background-size: cover;
   background-position: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
+  margin: 45px;
 }
 
-#logo h1 {
-  margin: 0;
+#intro {
+  position: absolute;
+  margin-top: 180px;
 }
 
 div.header {
@@ -207,6 +207,20 @@ li.repo h3 {
 
 .repo.python:after {
   border-right-color: #6aad2d;
+}
+
+.logo-spinner {
+  animation: spin-animation 4s 1;
+  display: inline-block;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }
 
 @media screen and (max-width: 1000px) {
